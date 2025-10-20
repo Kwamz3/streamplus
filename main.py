@@ -20,6 +20,6 @@ movies = [
 def greeting():
     return {"message": "Welcome to Streamplus"}
 
-@app.get("/Home")
+@app.get("/home")
 def get_all_movies():
     return movies
