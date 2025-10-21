@@ -27,7 +27,7 @@ movies_db: List[Movie] = [
         runtime=148, 
         genre="Action, Adventure, Sci-Fi", 
         producer="Emma Thomas, Christopher Nolan", 
-        poster="https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjYyNl5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/dSNjD5Et5yjFYT--3tDorUqiH8c=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10980706_p_v13_ar.jpg"
     ),
     Movie(
         id=2, 
@@ -36,7 +36,7 @@ movies_db: List[Movie] = [
         runtime=152, 
         genre="Action, Crime, Drama", 
         producer="Emma Thomas, Charles Roven, Christopher Nolan", 
-        poster="https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/oo28C7Wr0cd5AVysj3KFYBmmNMA=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12607594_p_v10_at.jpg"
     ),
     Movie(
         id=3, 
@@ -45,7 +45,7 @@ movies_db: List[Movie] = [
         runtime=169, 
         genre="Action, Adventure, Sci-Fi", 
         producer="Emma Thomas, Christopher Nolan, Lynda Obst", 
-        poster="https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDAtN2MyNi00ZjQ1LWFmZTItODM2ZTk2ZTQxYmJlXkEyXkFqcGc@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/MHH-KUNH3IYgrGaWHNBD3fA3hUw=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11873485_p_v10_az.jpg"
     ),
     Movie(
         id=4, 
@@ -54,7 +54,7 @@ movies_db: List[Movie] = [
         runtime=181, 
         genre="Action, Crime, Drama", 
         producer="Kevin Feige", 
-        poster="https://m.media-amazon.com/images/M/MV5BMTc5MDE2NzY0NV5BMl5BanBnXkFtZTgwNzU1NzY2NzM@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/t_euF7h0tUiid3gGWdVZuRkC9ws=/206x305/v2/https://resizing.flixster.com/qIe0yjJYL2q1Ny0Af1_i6Uen1Xo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzkwYTAwNjk1LTYzNWUtNDA3Ny05YjQyLTMzNDM0MzlmYTBmOS5qcGc="
     ),
     Movie(
         id=5, 
@@ -63,7 +63,7 @@ movies_db: List[Movie] = [
         runtime=134, 
         genre="Action, Adventure, Sci-Fi", 
         producer="Kevin Feige", 
-        poster="https://m.media-amazon.com/images/M/MV5BMTg1MzYzMjQ5NV5BMl5BanBnXkFtZTgwMTc4MjA2NDM@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/fnRMJMGdQshXrDU88pGgxa4vEsg=/206x305/v2/https://resizing.flixster.com/qtYisqOwDStnpo2P22PRTHC53Uk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2NmMmQ0ZTRiLWVkOGYtNDllNS05ZjRiLWYyY2RhMjk1YzRjYi5qcGc="
     ),
     Movie(
         id=6, 
@@ -72,7 +72,7 @@ movies_db: List[Movie] = [
         runtime=148, 
         genre="Action, Adventure, Fantasy", 
         producer="Kevin Feige, Amy Pascal", 
-        poster="https://m.media-amazon.com/images/M/MV5BZmMxYzYzYzEtNGE4My00NzA3LWIxZDQtYjhlNDQ0OTc2MjFhXkEyXkFqcGc@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/n0ZezjP5D67ig876rHKSh5SH1BQ=/206x305/v2/https://resizing.flixster.com/2q0ja5pOYxDRZ2b8LD4ukjr8zqI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgwNzVmNjE2LTJiY2QtNDhhMS04ODZlLTlkZDU4YzU5YjEzNi5qcGc="
     ),
     Movie(
         id=7, 
@@ -81,7 +81,7 @@ movies_db: List[Movie] = [
         runtime=126, 
         genre="Action, Adventure, Fantasy", 
         producer="Kevin Feige", 
-        poster="https://m.media-amazon.com/images/M/MV5BMmU5NTJhNGItNGEzNi00ZTM2LThkMjEtZjQ4NDM1OGZlZjQ4XkEyXkFqcGc@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/S9KgcQ-aXTMxJdDcawazTAMi25w=/206x305/v2/https://resizing.flixster.com/CRy_xsBh3o8Dv9iXP99rf1IqzqU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg3N2Y1M2ZlLTk4OGYtNDE4YS1iYjRmLWJhMjkyMTRkYWFkYi5qcGc="
     ),
     Movie(
         id=8, 
@@ -90,7 +90,7 @@ movies_db: List[Movie] = [
         runtime=130, 
         genre="Action, Adventure, Comedy", 
         producer="Kevin Feige", 
-        poster="https://m.media-amazon.com/images/M/MV5BMTg1NjYxNjA3OF5BMl5BanBnXkFtZTgwNzYyNDQ3MzI@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/ze6SWWpaVcr3LrT75YlnBeDkeic=/206x305/v2/https://resizing.flixster.com/KELM3SNcyzWJQ4yFxSmffjfnDw8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzdjNDU5MGQ2LTNjMjEtNGRkOC1iMTMzLWJmMDE4ZGU2YzA1ZS5qcGc="
     ),
     Movie(
         id=9, 
@@ -99,7 +99,7 @@ movies_db: List[Movie] = [
         runtime=176, 
         genre="Action, Crime, Drama", 
         producer="Dylan Clark, Matt Reeves", 
-        poster="https://m.media-amazon.com/images/M/MV5BN2E2YjMxY2UtNTEyYi00ZmFjLWFlZTQtMjE1YjY5MDA0MTcwXkEyXkFqcGc@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/EDwgO6uDRQHzGb-QP5HOHjnnfSQ=/206x305/v2/https://resizing.flixster.com/jv5ZCndtFhgkydyfoqpnEba8OWw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2VlNzQ2NzNiLTJkZDUtNDhlOS04MGFhLTBjM2IwMzEyNTFkMy5qcGc="
     ),
     Movie(
         id=10, 
@@ -108,7 +108,7 @@ movies_db: List[Movie] = [
         runtime=155, 
         genre="Action, Adventure, Drama", 
         producer="Mary Parent, Denis Villeneuve, Cale Boyter", 
-        poster="https://m.media-amazon.com/images/M/MV5BZTE0YWQzN2ItNjMyZS00ZjY2LWFhNjYtZDIyMTBlZTliMWZjXkEyXkFqcGc@._V1_SX300.jpg"
+        poster="https://resizing.flixster.com/Ouo5Lpg3kAbilLJkvJNvL5TdbBA=/206x305/v2/https://resizing.flixster.com/8jJemXwPsjGJcVg4xNB2gyh6BwM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgwMWYyNjEzLWYzOWEtNGEwMy05ZTcxLWYwOTJmYjAwZmRmOC5qcGc="
     ),
 ]
 
