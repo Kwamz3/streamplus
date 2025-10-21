@@ -236,7 +236,7 @@ def delete_movie(movie_id: int = Path(..., ge=1)):
         "deleted_movie": deleted_movie
     }
     
-@app.get("/movies/{movie_id}", tags=["Movies"])
+@app.get("/movies/trailers/{movie_id}", tags=["Movies"])
 def show_trailer(movie_id: int = Path(..., ge=1, description="The id of a movie")):
     """Get a specific movie by ID"""
     movie = next((m for m in movies_db if m.id == movie_id), None)
