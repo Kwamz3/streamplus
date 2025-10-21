@@ -7,3 +7,10 @@ services:
     envVars:
       - key: PYTHON_VERSION
         value: 3.11
+
+  - type: cron
+    name: streamplus-keep-alive
+    runtime: node
+    schedule: "*/14 * * * *"
+    buildCommand: echo "No build needed"
+    startCommand: curl https://streamplus.onrender.com/health
