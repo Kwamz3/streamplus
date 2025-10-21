@@ -125,7 +125,8 @@ def read_root():
             "movies": "/movies",
             "movie_by_id": "/movies/{id}",
             "search": "/movies/search?title={title}",
-            "docs": "/docs"
+            "docs": "/docs",
+            "trailers": "/movies/{movie_id}/trailers"
         }
     }
 
