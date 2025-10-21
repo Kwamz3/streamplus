@@ -21,7 +21,7 @@ class Movie(BaseModel):
                 "runtime": 148,
                 "genre": "Action, Adventure, Sci-Fi",
                 "producer": "Emma Thomas, Christopher Nolan",
-                "poster": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjYyNl5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg"
+                "poster": "https://resizing.flixster.com/dSNjD5Et5yjFYT--3tDorUqiH8c=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10980706_p_v13_ar.jpg"
             }
         }
 
