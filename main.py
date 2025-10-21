@@ -254,7 +254,7 @@ def show_trailer(movie_id: int):
     
     
     #video_path = fr"C:\Subdrive\VS DC\Fastapi\streamplus\videos\{movie_id}.mp4"
-     video_path = os.path.join("videos", f"{movie_id}.mp4")
+    video_path = os.path.join("videos", f"{movie_id}.mp4")
 
     if not os.path.exists(video_path):
         raise HTTPException(status_code=404, detail=f"Movie with ID {movie_id} not found")
