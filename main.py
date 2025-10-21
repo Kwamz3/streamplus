@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Query, Path
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from typing import List, Optional
 from models import Movie, MovieCreate, MovieUpdate
 import os
@@ -125,7 +125,8 @@ def read_root():
             "movies": "/movies",
             "movie_by_id": "/movies/{id}",
             "search": "/movies/search?title={title}",
-            "docs": "/docs"
+            "docs": "/docs",
+            "trailers": "/movies/{movie_id}/trailers"
         }
     }
 
@@ -236,20 +237,30 @@ def delete_movie(movie_id: int = Path(..., ge=1)):
         "deleted_movie": deleted_movie
     }
     
-@app.get("/movies/trailers/{movie_id}", tags=["Movies"])
-def show_trailer(movie_id: int = Path(..., ge=1, description="The id of a movie")):
-    """Get a specific movie by ID"""
-    movie = next((m for m in movies_db if m.id == movie_id), None)
     
-    if not movie:
-        raise HTTPException(status_code=404, detail=f"Movie with ID {movie_id} not found") 
+def iterfile(path: str):
+    with open(path, "rb") as file:
+        yield from file
+    
+@app.get("/movies/{movie_id}/trailers", tags=["Movies"])
+def show_trailer(movie_id: int):
+    # """Get a specific movie by ID"""
+    # movie = next((m for m in movies_db if m.id == movie_id), None)
+    
+    # if not movie:
+    #     raise HTTPException(status_code=404, detail=f"Movie with ID {movie_id} not found") 
     
     
-    video_path = fr"C:\Subdrive\VS DC\Fastapi\streamplus\videos\{movie_id}.mp4"
+    
+    
+    #video_path = fr"C:\Subdrive\VS DC\Fastapi\streamplus\videos\{movie_id}.mp4"
+     video_path = os.path.join("videos", f"{movie_id}.mp4")
+
     if not os.path.exists(video_path):
         raise HTTPException(status_code=404, detail=f"Movie with ID {movie_id} not found")
     
-    return FileResponse(video_path, media_type= "video/mp4")
+    return StreamingResponse(iterfile(video_path), media_type= "video/mp4")
+    
 
 
 @app.get("/health", tags=["Health"])
