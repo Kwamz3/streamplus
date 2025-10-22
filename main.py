@@ -1,6 +1,6 @@
 from fastapi import FastAPI, HTTPException, Query, Path
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, StreamingResponse
+from fastapi.responses import StreamingResponse
 from typing import List, Optional
 from models import Movie, MovieCreate, MovieUpdate
 import os
