@@ -15,4 +15,4 @@ services:
     plan: free
     schedule: "*/14 * * * *"
     buildCommand: echo "No build needed"
-    startCommand: curl https://streamplus.onrender.com/health || echo "Service starting up"
+    startCommand: curl https://streamplus-yjwm.onrender.com/health || echo "Service starting up"
