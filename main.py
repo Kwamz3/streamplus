@@ -1,9 +1,10 @@
 from fastapi import FastAPI, HTTPException, Query, Path
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import StreamingResponse
+from fastapi.responses import StreamingResponse, FileResponse
 from typing import List, Optional
 from models import Movie, MovieCreate, MovieUpdate
 import os
+from pathlib import Path as FilePath
 
 app = FastAPI(
     title="StreamPlus API",
@@ -126,7 +127,7 @@ def read_root():
             "movie_by_id": "/movies/{id}",
             "search": "/movies/search?title={title}",
             "docs": "/docs",
-            "trailers": "/movies/{movie_id}/trailers"
+            "trailers": "/videos/{filename}"
         }
     }
 
@@ -242,25 +243,44 @@ def iterfile(path: str):
     with open(path, "rb") as file:
         yield from file
     
-@app.get("/movies/{movie_id}/trailers", tags=["Movies"])
-def show_trailer(movie_id: int):
-    # """Get a specific movie by ID"""
-    # movie = next((m for m in movies_db if m.id == movie_id), None)
-    
-    # if not movie:
-    #     raise HTTPException(status_code=404, detail=f"Movie with ID {movie_id} not found") 
-    
-    vid_1 = "https://1024terabox.com/s/1s8OyAgrd9hkjVGVWEpZXxg"
-    
-    
-    #video_path = fr"C:\Subdrive\VS DC\Fastapi\streamplus\videos\{movie_id}.mp4"
-    video_path = os.path.join(vid_1, f"{movie_id}.mp4")
 
+
+@app.get("/videos/{filename}", tags=["Videos"])
+def get_video(filename: str = Path(..., description="Name of the video file")):
+    """Serve a video file from the videos directory"""
+    # Specify the base path for videos
+    video_base_path = r"C:\Subdrive\VS DC\Fastapi\streamplus\videos"
+    
+    # Construct the full video path
+    video_path = os.path.join(video_base_path, filename)
+    
+    # Security check: ensure the path is within the videos directory
+    try:
+        video_full_path = os.path.abspath(video_path)
+        base_full_path = os.path.abspath(video_base_path)
+        
+        if not video_full_path.startswith(base_full_path):
+            raise HTTPException(status_code=403, detail="Access denied")
+    except Exception:
+        raise HTTPException(status_code=400, detail="Invalid file path")
+    
+    # Check if file exists
     if not os.path.exists(video_path):
-        raise HTTPException(status_code=404, detail=f"Movie with ID {movie_id} not found")
+        raise HTTPException(status_code=404, detail=f"Video file '{filename}' not found")
     
-    return StreamingResponse(iterfile(video_path), media_type= "video/mp4")
+    # Check if it's a file (not a directory)
+    if not os.path.isfile(video_path):
+        raise HTTPException(status_code=400, detail="Invalid file")
     
+    # Stream the video file
+    return StreamingResponse(
+        iterfile(video_path), 
+        media_type="video/mp4",
+        headers={
+            "Accept-Ranges": "bytes",
+            "Content-Disposition": f"inline; filename={filename}"
+        }
+    )
 
 
 @app.get("/health", tags=["Health"])
