@@ -127,7 +127,7 @@ def read_root():
             "movie_by_id": "/movies/{id}",
             "search": "/movies/search?title={title}",
             "docs": "/docs",
-            "trailers": "/videos/{filename}"
+            "videos": "/videos/{filename}"
         }
     }
 
@@ -248,8 +248,8 @@ def iterfile(path: str):
 @app.get("/videos/{filename}", tags=["Videos"])
 def get_video(filename: str = Path(..., description="Name of the video file")):
     """Serve a video file from the videos directory"""
-    # Specify the base path for videos
-    video_base_path = r"C:\Subdrive\VS DC\Fastapi\streamplus\videos"
+    # Specify the base path for videos - use relative path for deployment compatibility
+    video_base_path = os.path.join(os.getcwd(), "videos")
     
     # Construct the full video path
     video_path = os.path.join(video_base_path, filename)
