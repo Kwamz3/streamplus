@@ -30,7 +30,8 @@ movies_db: List[Movie] = [
         runtime=148, 
         genre="Action, Adventure, Sci-Fi", 
         producer="Emma Thomas, Christopher Nolan", 
-        poster="https://resizing.flixster.com/dSNjD5Et5yjFYT--3tDorUqiH8c=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10980706_p_v13_ar.jpg"
+        poster="https://resizing.flixster.com/dSNjD5Et5yjFYT--3tDorUqiH8c=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10980706_p_v13_ar.jpg",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
     ),
     Movie(
         id=2, 
@@ -39,7 +40,8 @@ movies_db: List[Movie] = [
         runtime=152, 
         genre="Action, Crime, Drama", 
         producer="Emma Thomas, Charles Roven, Christopher Nolan", 
-        poster="https://resizing.flixster.com/oo28C7Wr0cd5AVysj3KFYBmmNMA=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12607594_p_v10_at.jpg"
+        poster="https://resizing.flixster.com/oo28C7Wr0cd5AVysj3KFYBmmNMA=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12607594_p_v10_at.jpg",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4"
     ),
     Movie(
         id=3, 
@@ -48,7 +50,8 @@ movies_db: List[Movie] = [
         runtime=169, 
         genre="Action, Adventure, Sci-Fi", 
         producer="Emma Thomas, Christopher Nolan, Lynda Obst", 
-        poster="https://resizing.flixster.com/MHH-KUNH3IYgrGaWHNBD3fA3hUw=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11873485_p_v10_az.jpg"
+        poster="https://resizing.flixster.com/MHH-KUNH3IYgrGaWHNBD3fA3hUw=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p11873485_p_v10_az.jpg",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
     ),
     Movie(
         id=4, 
@@ -57,7 +60,8 @@ movies_db: List[Movie] = [
         runtime=181, 
         genre="Action, Crime, Drama", 
         producer="Kevin Feige", 
-        poster="https://resizing.flixster.com/t_euF7h0tUiid3gGWdVZuRkC9ws=/206x305/v2/https://resizing.flixster.com/qIe0yjJYL2q1Ny0Af1_i6Uen1Xo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzkwYTAwNjk1LTYzNWUtNDA3Ny05YjQyLTMzNDM0MzlmYTBmOS5qcGc="
+        poster="https://resizing.flixster.com/t_euF7h0tUiid3gGWdVZuRkC9ws=/206x305/v2/https://resizing.flixster.com/qIe0yjJYL2q1Ny0Af1_i6Uen1Xo=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzkwYTAwNjk1LTYzNWUtNDA3Ny05YjQyLTMzNDM0MzlmYTBmOS5qcGc=",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4"
     ),
     Movie(
         id=5, 
@@ -66,7 +70,8 @@ movies_db: List[Movie] = [
         runtime=134, 
         genre="Action, Adventure, Sci-Fi", 
         producer="Kevin Feige", 
-        poster="https://resizing.flixster.com/fnRMJMGdQshXrDU88pGgxa4vEsg=/206x305/v2/https://resizing.flixster.com/qtYisqOwDStnpo2P22PRTHC53Uk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2NmMmQ0ZTRiLWVkOGYtNDllNS05ZjRiLWYyY2RhMjk1YzRjYi5qcGc="
+        poster="https://resizing.flixster.com/fnRMJMGdQshXrDU88pGgxa4vEsg=/206x305/v2/https://resizing.flixster.com/qtYisqOwDStnpo2P22PRTHC53Uk=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2NmMmQ0ZTRiLWVkOGYtNDllNS05ZjRiLWYyY2RhMjk1YzRjYi5qcGc=",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4"
     ),
     Movie(
         id=6, 
@@ -75,7 +80,8 @@ movies_db: List[Movie] = [
         runtime=148, 
         genre="Action, Adventure, Fantasy", 
         producer="Kevin Feige, Amy Pascal", 
-        poster="https://resizing.flixster.com/n0ZezjP5D67ig876rHKSh5SH1BQ=/206x305/v2/https://resizing.flixster.com/2q0ja5pOYxDRZ2b8LD4ukjr8zqI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgwNzVmNjE2LTJiY2QtNDhhMS04ODZlLTlkZDU4YzU5YjEzNi5qcGc="
+        poster="https://resizing.flixster.com/n0ZezjP5D67ig876rHKSh5SH1BQ=/206x305/v2/https://resizing.flixster.com/2q0ja5pOYxDRZ2b8LD4ukjr8zqI=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgwNzVmNjE2LTJiY2QtNDhhMS04ODZlLTlkZDU4YzU5YjEzNi5qcGc=",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4"
     ),
     Movie(
         id=7, 
@@ -84,7 +90,8 @@ movies_db: List[Movie] = [
         runtime=126, 
         genre="Action, Adventure, Fantasy", 
         producer="Kevin Feige", 
-        poster="https://resizing.flixster.com/S9KgcQ-aXTMxJdDcawazTAMi25w=/206x305/v2/https://resizing.flixster.com/CRy_xsBh3o8Dv9iXP99rf1IqzqU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg3N2Y1M2ZlLTk4OGYtNDE4YS1iYjRmLWJhMjkyMTRkYWFkYi5qcGc="
+        poster="https://resizing.flixster.com/S9KgcQ-aXTMxJdDcawazTAMi25w=/206x305/v2/https://resizing.flixster.com/CRy_xsBh3o8Dv9iXP99rf1IqzqU=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzg3N2Y1M2ZlLTk4OGYtNDE4YS1iYjRmLWJhMjkyMTRkYWFkYi5qcGc=",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4"
     ),
     Movie(
         id=8, 
@@ -93,7 +100,8 @@ movies_db: List[Movie] = [
         runtime=130, 
         genre="Action, Adventure, Comedy", 
         producer="Kevin Feige", 
-        poster="https://resizing.flixster.com/ze6SWWpaVcr3LrT75YlnBeDkeic=/206x305/v2/https://resizing.flixster.com/KELM3SNcyzWJQ4yFxSmffjfnDw8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzdjNDU5MGQ2LTNjMjEtNGRkOC1iMTMzLWJmMDE4ZGU2YzA1ZS5qcGc="
+        poster="https://resizing.flixster.com/ze6SWWpaVcr3LrT75YlnBeDkeic=/206x305/v2/https://resizing.flixster.com/KELM3SNcyzWJQ4yFxSmffjfnDw8=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzdjNDU5MGQ2LTNjMjEtNGRkOC1iMTMzLWJmMDE4ZGU2YzA1ZS5qcGc=",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4"
     ),
     Movie(
         id=9, 
@@ -102,7 +110,8 @@ movies_db: List[Movie] = [
         runtime=176, 
         genre="Action, Crime, Drama", 
         producer="Dylan Clark, Matt Reeves", 
-        poster="https://resizing.flixster.com/EDwgO6uDRQHzGb-QP5HOHjnnfSQ=/206x305/v2/https://resizing.flixster.com/jv5ZCndtFhgkydyfoqpnEba8OWw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2VlNzQ2NzNiLTJkZDUtNDhlOS04MGFhLTBjM2IwMzEyNTFkMy5qcGc="
+        poster="https://resizing.flixster.com/EDwgO6uDRQHzGb-QP5HOHjnnfSQ=/206x305/v2/https://resizing.flixster.com/jv5ZCndtFhgkydyfoqpnEba8OWw=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2VlNzQ2NzNiLTJkZDUtNDhlOS04MGFhLTBjM2IwMzEyNTFkMy5qcGc=",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4"
     ),
     Movie(
         id=10, 
@@ -111,7 +120,8 @@ movies_db: List[Movie] = [
         runtime=155, 
         genre="Action, Adventure, Drama", 
         producer="Mary Parent, Denis Villeneuve, Cale Boyter", 
-        poster="https://resizing.flixster.com/Ouo5Lpg3kAbilLJkvJNvL5TdbBA=/206x305/v2/https://resizing.flixster.com/8jJemXwPsjGJcVg4xNB2gyh6BwM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgwMWYyNjEzLWYzOWEtNGEwMy05ZTcxLWYwOTJmYjAwZmRmOC5qcGc="
+        poster="https://resizing.flixster.com/Ouo5Lpg3kAbilLJkvJNvL5TdbBA=/206x305/v2/https://resizing.flixster.com/8jJemXwPsjGJcVg4xNB2gyh6BwM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzLzgwMWYyNjEzLWYzOWEtNGEwMy05ZTcxLWYwOTJmYjAwZmRmOC5qcGc=",
+        video_url="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
     ),
 ]
 
@@ -128,7 +138,8 @@ def read_root():
             "search": "/movies/search?title={title}",
             "docs": "/docs",
             "videos": "/videos/{filename}"
-        }
+        },
+        "note": "Movies now include a 'video_url' field with direct video links"
     }
 
 
@@ -153,7 +164,8 @@ def get_all_movies(
     return filtered_movies
 
 
-@app.get("/movies/{movie_id}", response_model=Movie, tags=["Movies"])
+
+@app.get("/movies/{movie_id}", response_model=List[Movie], tags=["Movies"])
 def get_movie_by_id(movie_id: int = Path(..., ge=1, description="The ID of the movie")):
     """Get a specific movie by ID"""
     movie = next((m for m in movies_db if m.id == movie_id), None)
@@ -164,27 +176,42 @@ def get_movie_by_id(movie_id: int = Path(..., ge=1, description="The ID of the m
     return movie
 
 
-@app.get("/movies/search/", response_model=List[Movie], tags=["Movies"])
+@app.get("/videos/{title}", response_model=List[Movie], tags=["Videos"])
 def search_movies(
-    title: Optional[str] = Query(None, description="Search by title"),
-    producer: Optional[str] = Query(None, description="Search by producer")
+    title: str = Path(..., description="title of the video")
 ):
-    """Search movies by title or producer"""
-    if not title and not producer:
-        raise HTTPException(status_code=400, detail="Please provide at least one search parameter")
     
     results = movies_db
     
     if title:
-        results = [m for m in results if title.lower() in m.title.lower()]
-    
-    if producer:
-        results = [m for m in results if producer.lower() in m.producer.lower()]
-    
+        results_title = [m for m in results if title.lower() in m.title.lower()]
+        return results_title
+        
     if not results:
         raise HTTPException(status_code=404, detail="No movies found matching your search")
     
     return results
+# @app.get("/movies/search/", response_model=List[Movie], tags=["Movies"])
+# def search_movies(
+#     title: Optional[str] = Query(None, description="Search by title"),
+#     producer: Optional[str] = Query(None, description="Search by producer")
+# ):
+#     """Search movies by title or producer"""
+#     if not title and not producer:
+#         raise HTTPException(status_code=400, detail="Please provide at least one search parameter")
+    
+#     results = movies_db
+    
+#     if title:
+#         results = [m for m in results if title.lower() in m.title.lower()]
+    
+#     if producer:
+#         results = [m for m in results if producer.lower() in m.producer.lower()]
+    
+#     if not results:
+#         raise HTTPException(status_code=404, detail="No movies found matching your search")
+    
+#     return results
 
 
 @app.post("/movies", response_model=Movie, status_code=201, tags=["Movies"])
@@ -239,49 +266,49 @@ def delete_movie(movie_id: int = Path(..., ge=1)):
     }
     
     
-def iterfile(path: str):
-    with open(path, "rb") as file:
-        yield from file
+# def iterfile(path: str, chunck_size: int = 1024 * 1024):
+#     with open(path, "rb") as file:
+#         while chunck_size:= file.read(chunck_size):
+#             yield from file
     
 
 
-@app.get("/videos/{filename}", tags=["Videos"])
-def get_video(filename: str = Path(..., description="Name of the video file")):
-    """Serve a video file from the videos directory"""
-    # Specify the base path for videos - use relative path for deployment compatibility
-    video_base_path = os.path.join(os.getcwd(), "videos")
+# @app.get("/videos/{filename}", tags=["Videos"])
+# def get_video(filename: str = Path(..., description="Name of the video file")):
+#     """Serve a video file from the videos directory"""
+#     # Specify the base path for videos - use relative path for deployment compatibility
+#     video_base_path = os.path.join(os.getcwd(), "videos")
     
-    # Construct the full video path
-    video_path = os.path.join(video_base_path, filename)
+#     # Construct the full video path
+#     video_path = os.path.join(video_base_path, filename)
     
-    # Security check: ensure the path is within the videos directory
-    try:
-        video_full_path = os.path.abspath(video_path)
-        base_full_path = os.path.abspath(video_base_path)
+#     # Security check: ensure the path is within the videos directory
+#     try:
+#         video_full_path = os.path.abspath(video_path)
+#         base_full_path = os.path.abspath(video_base_path)
         
-        if not video_full_path.startswith(base_full_path):
-            raise HTTPException(status_code=403, detail="Access denied")
-    except Exception:
-        raise HTTPException(status_code=400, detail="Invalid file path")
+#         if not video_full_path.startswith(base_full_path):
+#             raise HTTPException(status_code=403, detail="Access denied")
+#     except Exception:
+#         raise HTTPException(status_code=400, detail="Invalid file path")
     
-    # Check if file exists
-    if not os.path.exists(video_path):
-        raise HTTPException(status_code=404, detail=f"Video file '{filename}' not found")
+#     # Check if file exists
+#     if not os.path.exists(video_path):
+#         raise HTTPException(status_code=404, detail=f"Video file '{filename}' not found")
     
-    # Check if it's a file (not a directory)
-    if not os.path.isfile(video_path):
-        raise HTTPException(status_code=400, detail="Invalid file")
+#     # Check if it's a file (not a directory)
+#     if not os.path.isfile(video_path):
+#         raise HTTPException(status_code=400, detail="Invalid file")
     
-    # Stream the video file
-    return StreamingResponse(
-        iterfile(video_path), 
-        media_type="video/mp4",
-        headers={
-            "Accept-Ranges": "bytes",
-            "Content-Disposition": f"inline; filename={filename}"
-        }
-    )
-
+#     # Stream the video file
+#     return StreamingResponse(
+#         iterfile(video_path), 
+#         media_type="video/mp4",
+#         headers={
+#             "Accept-Ranges": "bytes",
+#             "Content-Disposition": f"inline; filename={filename}"
+#         }
+#     )
 
 @app.get("/health", tags=["Health"])
 def health_check():

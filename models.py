@@ -11,6 +11,7 @@ class Movie(BaseModel):
     genre: str = Field(..., description="Movie genres")
     producer: str = Field(..., description="Movie producers")
     poster: str = Field(..., description="URL to movie poster")
+    video_url: Optional[str] = Field(None, description="URL to video stream")
 
     class Config:
         json_schema_extra = {
@@ -21,7 +22,8 @@ class Movie(BaseModel):
                 "runtime": 148,
                 "genre": "Action, Adventure, Sci-Fi",
                 "producer": "Emma Thomas, Christopher Nolan",
-                "poster": "https://resizing.flixster.com/dSNjD5Et5yjFYT--3tDorUqiH8c=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10980706_p_v13_ar.jpg"
+                "poster": "https://resizing.flixster.com/dSNjD5Et5yjFYT--3tDorUqiH8c=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10980706_p_v13_ar.jpg",
+                "video_url": "https://example.com/videos/inception.mp4"
             }
         }
 
@@ -34,6 +36,7 @@ class MovieCreate(BaseModel):
     genre: str
     producer: str
     poster: str
+    video_url: Optional[str] = None
 
 
 class MovieUpdate(BaseModel):
@@ -44,3 +47,4 @@ class MovieUpdate(BaseModel):
     genre: Optional[str] = None
     producer: Optional[str] = None
     poster: Optional[str] = None
+    video_url: Optional[str] = None
